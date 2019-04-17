@@ -223,7 +223,7 @@ Type: `Object`
 
 The form body is converted to query string using [`(new URLSearchParams(object)).toString()`](https://nodejs.org/api/url.html#url_constructor_new_urlsearchparams_obj).
 
-If set to `true` and `Content-Type` header is not set, it will be set to `application/x-www-form-urlencoded`.
+If form is not `undefined` and `Content-Type` header is not set, it will be set to `application/x-www-form-urlencoded`.
 
 ###### searchParams
 
